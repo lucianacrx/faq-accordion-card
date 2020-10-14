@@ -1,0 +1,48 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(270deg, hsl(273, 75%, 66%), 35%, hsl(240, 73%, 65%));
+    background: -moz-linear-gradient(270deg, hsl(273, 75%, 66%), 35%, hsl(240, 73%, 65%));
+    background: -webkit-gradient(270deg, hsl(273, 75%, 66%), 35%, hsl(240, 73%, 65%));
+    background: -webkit-linear-gradient(270deg, hsl(273, 75%, 66%), 35%, hsl(240, 73%, 65%));
+    background: -o-linear-gradient(270deg, hsl(273, 75%, 66%), 35%, hsl(240, 73%, 65%));
+    background: -ms-linear-gradient(270deg, hsl(273, 75%, 66%), 35%, hsl(240, 73%, 65%));
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container {
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    max-width: 80%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.illustration-column {
+    background-image: url('../images/bg-pattern-desktop.svg');
+}
+
+.illustration-column img {
+    height: auto;
+    width: 70%;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+}

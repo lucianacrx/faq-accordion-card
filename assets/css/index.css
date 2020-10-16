@@ -41,8 +41,7 @@ body {
 .main-container {
     background-color: #FFFFFF;
     border-radius: 40px;
-    max-width: 80%;
-    padding: 30px;
+    width: 70%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -53,16 +52,32 @@ body {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
-    flex: 1;
+    flex: 1 1 0;
 }
 
 .illustration-column {
     background-image: url('../images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 185%;
+    background-position: 115% 70%;
+    overflow: hidden;
 }
 
 .illustration-column img {
     height: auto;
-    width: 70%;
+    width: 100%;
+    right: 72px;
+    position: relative;
+    bottom: -45px;
+}
+
+.content-column {
+    padding: 0px 80px 80px 0;
+}
+
+.content-column h1 {
+    padding-top: 75px;
+    font-size: 34px;
 }
 
 .accordion {
@@ -77,9 +92,29 @@ body {
     color: hsl(237, 12%, 33%);
 }
 
+.accordion:after {
+    content: url('../images/icon-arrow-down.svg');
+    float: right;
+    padding-right: 10px;
+}
+
+.active:after {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.active {
+    font-weight: bold;
+}
+
+.accordion:hover {
+    color: hsl(14, 88%, 65%);
+}
+
 .panel {
     overflow: hidden;
-    color: hsl(237, 12%, 33%);
+    color: hsl(240, 6%, 50%);
+    display: none;
 }
 
 hr {

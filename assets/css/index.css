@@ -24,12 +24,12 @@ html {
 }
 
 body {
-    background: linear-gradient(270deg, hsl(273, 75%, 66%), 35%, hsl(240, 73%, 65%));
-    background: -moz-linear-gradient(270deg, hsl(273, 75%, 66%), 35%, hsl(240, 73%, 65%));
-    background: -webkit-gradient(270deg, hsl(273, 75%, 66%), 35%, hsl(240, 73%, 65%));
-    background: -webkit-linear-gradient(270deg, hsl(273, 75%, 66%), 35%, hsl(240, 73%, 65%));
-    background: -o-linear-gradient(270deg, hsl(273, 75%, 66%), 35%, hsl(240, 73%, 65%));
-    background: -ms-linear-gradient(270deg, hsl(273, 75%, 66%), 35%, hsl(240, 73%, 65%));
+    background: linear-gradient(to bottom, hsl(273, 75%, 66%), 65%, hsl(240, 73%, 65%));
+    background: -moz-linear-gradient(to bottom, hsl(273, 75%, 66%), 65%, hsl(240, 73%, 65%));
+    background: -webkit-gradient(to bottom, hsl(273, 75%, 66%), 65%, hsl(240, 73%, 65%));
+    background: -webkit-linear-gradient(to bottom, hsl(273, 75%, 66%), 65%, hsl(240, 73%, 65%));
+    background: -o-linear-gradient(to bottom, hsl(273, 75%, 66%), 65%, hsl(240, 73%, 65%));
+    background: -ms-linear-gradient(to bottom, hsl(273, 75%, 66%), 65%, hsl(240, 73%, 65%));
     height: 100%;
     display: flex;
     justify-content: center;
@@ -38,46 +38,52 @@ body {
     font-family: 'Kumbh Sans';
 }
 
+button.accordion {
+    font-size: 15px;
+    font-family: 'Kumbh Sans';
+}
+
 .main-container {
     background-color: #FFFFFF;
     border-radius: 40px;
     width: 70%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     font-size: 12px;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1 1 0;
+    height: 32rem;
 }
 
 .illustration-column {
-    background-image: url('../images/bg-pattern-desktop.svg');
-    background-repeat: no-repeat;
-    background-size: 185%;
-    background-position: 115% 70%;
-    overflow: hidden;
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 50%;
+    flex: 1 1 0;
 }
 
-.illustration-column img {
-    height: auto;
+.woman-img-container {
+    overflow: hidden;
     width: 100%;
-    right: 72px;
-    position: relative;
-    bottom: -45px;
+    height: 100%;
+    position: absolute;
+}
+
+.woman-online {
+    height: auto;
+    position: absolute;
+    top: 15%;
+    left: -19%;
 }
 
 .content-column {
-    padding: 0px 80px 80px 0;
+    padding: 0px 65px 0px 40px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
 }
 
 .content-column h1 {
     padding-top: 75px;
     font-size: 34px;
+    padding-bottom: 15px;
 }
 
 .accordion {
@@ -90,17 +96,19 @@ body {
     padding: 10px 0;
     font-size: 14px;
     color: hsl(237, 12%, 33%);
+    width: 100%;
 }
 
 .accordion:after {
     content: url('../images/icon-arrow-down.svg');
     float: right;
-    padding-right: 10px;
+    padding-right: 12px;
 }
 
 .active:after {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+    padding-left: 12px;
 }
 
 .active {
@@ -115,6 +123,8 @@ body {
     overflow: hidden;
     color: hsl(240, 6%, 50%);
     display: none;
+    padding: 10px 0;
+    line-height: 1.5;
 }
 
 hr {

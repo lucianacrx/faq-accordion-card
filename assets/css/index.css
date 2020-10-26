@@ -39,14 +39,14 @@ body {
 }
 
 button.accordion {
-    font-size: 15px;
+    font-size: 14px;
     font-family: 'Kumbh Sans';
 }
 
 .main-container {
     background-color: #FFFFFF;
-    border-radius: 40px;
-    width: 70%;
+    border-radius: 25px;
+    width: 60rem;
     display: flex;
     font-size: 12px;
     height: 32rem;
@@ -59,11 +59,18 @@ button.accordion {
     flex: 1 1 0;
 }
 
-.woman-img-container {
+.bg-container, .woman-img-container {
     overflow: hidden;
     width: 100%;
     height: 100%;
     position: absolute;
+}
+
+.bg-image {
+    height: 185%;
+    position: absolute;
+    right: 13%;
+    bottom: -27%;
 }
 
 .woman-online {
@@ -73,15 +80,22 @@ button.accordion {
     left: -19%;
 }
 
+.box-image {
+    height: auto;
+    position: absolute;
+    right: 78%;
+    top: 41.8%;
+}
+
 .content-column {
-    padding: 0px 65px 0px 40px;
+    padding: 0px 95px 0px 35px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
+    flex: 0 0 40%;
 }
 
 .content-column h1 {
-    padding-top: 75px;
+    padding-top: 60px;
     font-size: 34px;
     padding-bottom: 15px;
 }
@@ -93,7 +107,7 @@ button.accordion {
     border: none;
     outline: none;
     background-color: #FFFFFF;
-    padding: 10px 0;
+    padding: 8px 0;
     font-size: 14px;
     color: hsl(237, 12%, 33%);
     width: 100%;

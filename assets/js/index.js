@@ -11,6 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 panel.style.display = "block";
             }
+
+            hideAll(accordions, this);
         });
     }
 });
+
+function hideAll(items, element) {
+    for (var i = 0; i < items.length; i++) {
+        if (items[i] !== element) {
+            items[i].classList.remove("active");
+            items[i].nextElementSibling.style.display = "none";
+        }
+    }
+}

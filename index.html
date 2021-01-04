@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="stylesheet" href="./assets/css/index.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <script type="text/javascript" src="./assets/js/index.js"></script>
-  
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script type="text/javascript" src="./assets/js/index.js"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div class="main-container">
-    <div class="illustration-column">
-      <div class="bg-container">
-        <img src="./assets/images/bg-pattern-desktop.svg" alt="Background" class="bg-image" />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="illustration-column">
+        <div class="bg-container">
+          <img
+            src="./assets/images/bg-pattern-desktop.svg"
+            alt="Background"
+            class="bg-image"
+          />
+        </div>
+        <div class="woman-img-container">
+          <img
+            src="./assets/images/illustration-woman-online-desktop.svg"
+            alt="Illustration woman online"
+            class="woman-online"
+          />
+        </div>
+        <img
+          src="./assets//images/illustration-box-desktop.svg"
+          alt="Box"
+          class="box-image"
+        />
       </div>
-      <div class="woman-img-container">
-        <img src="./assets/images/illustration-woman-online-desktop.svg" alt="Illustration woman online" class="woman-online" />
+      <div class="content-column">
+        <h1>FAQ</h1>
+
+        <button class="accordion">How many team members can I invite?</button>
+        <div class="panel">
+          You can invite up to 2 additional users on the Free plan. There is no
+          limit on team members for the Premium plan.
+        </div>
+        <hr />
+
+        <button class="accordion">What is the maximum file upload size?</button>
+        <div class="panel">
+          No more than 2GB. All files in your account must fit your allotted
+          storage space.
+        </div>
+        <hr />
+
+        <button class="accordion">How do I reset my password?</button>
+        <div class="panel">
+          Click “Forgot password” from the login page or “Change password” from
+          your profile page. A reset link will be emailed to you.
+        </div>
+        <hr />
+
+        <button class="accordion">Can I cancel my subscription?</button>
+        <div class="panel">
+          Yes! Send us a message and we’ll process your request no questions
+          asked.
+        </div>
+        <hr />
+
+        <button class="accordion">Do you provide additional support?</button>
+        <div class="panel">
+          Chat and email support is available 24/7. Phone lines are open during
+          normal business hours.
+        </div>
+        <hr />
       </div>
-      <img src="./assets//images/illustration-box-desktop.svg" alt="Box" class="box-image" />
     </div>
-    <div class="content-column">
-      <h1>FAQ</h1>
 
-      <button class="accordion">How many team members can I invite?</button>
-      <div class="panel">
-        You can invite up to 2 additional users on the Free plan. There is no limit on 
-        team members for the Premium plan.
-      </div>
-      <hr />
-
-      <button class="accordion">What is the maximum file upload size?</button>
-      <div class="panel">
-        No more than 2GB. All files in your account must fit your allotted storage space.
-      </div>
-      <hr />
-
-      <button class="accordion">How do I reset my password?</button>
-      <div class="panel">
-        Click “Forgot password” from the login page or “Change password” from your profile page.
-        A reset link will be emailed to you.
-      </div>
-      <hr />
-
-      <button class="accordion">Can I cancel my subscription?</button>
-      <div class="panel">
-        Yes! Send us a message and we’ll process your request no questions asked.
-      </div>
-      <hr />
-
-      <button class="accordion">Do you provide additional support?</button>
-      <div class="panel">
-        Chat and email support is available 24/7. Phone lines are open during normal business hours.
-      </div>
-      <hr />
+    <div class="attribution">
+      Challenge by &nbsp;
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"></a>
+        Frontend Mentor</a
+      >. Coded by &nbsp;<a href="#">Ana Tatis</a>.
     </div>
-  </div>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </body>
 </html>

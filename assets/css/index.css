@@ -211,10 +211,10 @@ hr {
 @media (max-width: 1023px) {
   .main-container {
     flex-direction: column;
-    width: 96vw;
-    height: calc(auto + 200px);
-    margin-top: 75px;
-    margin-bottom: 75px;
+    width: 90vw;
+    height: 80vh;
+    margin-top: 115px;
+    margin-bottom: 70px;
   }
 
   .illustration-column {
@@ -262,5 +262,15 @@ hr {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 374px) {
+  .main-container {
+    flex-direction: column;
+    width: 90vw;
+    height: 80vh;
+    margin-top: 115px;
+    margin-bottom: 70px;
   }
 }

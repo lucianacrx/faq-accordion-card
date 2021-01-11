@@ -97,6 +97,11 @@ button.accordion {
   position: absolute;
 }
 
+.bg-image-mobile,
+.woman-online-mobile {
+  display: none;
+}
+
 .bg-image {
   height: 185%;
   position: absolute;
@@ -198,20 +203,17 @@ hr {
 }
 
 @media (max-width: 1023px) {
-  body {
-    justify-content: flex-end;
-  }
-
   .main-container {
     flex-direction: column;
     width: 96vw;
-    height: 70vh;
+    height: calc(auto + 200px);
+    margin-top: 75px;
     margin-bottom: 75px;
   }
 
   .illustration-column {
     flex: none;
-    height: 150px;
+    height: 90px;
   }
 
   .bg-container,
@@ -220,24 +222,29 @@ hr {
   }
 
   .bg-image,
-  .woman-online {
+  .woman-online,
+  .box-image {
+    display: none;
+  }
+
+  .bg-image-mobile,
+  .woman-online-mobile {
+    display: flex;
+    position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
   }
 
-  .bg-image {
-    bottom: -10px;
-    width: 50vw;
+  .bg-image-mobile {
     height: auto;
   }
 
-  .woman-online {
-    bottom: 30px;
-    top: auto;
-    width: 50vw;
+  .woman-online-mobile {
+    bottom: 0;
     height: auto;
+    right: 26px;
   }
 
   .content-column {
@@ -250,162 +257,21 @@ hr {
     padding-top: 20px;
     padding-bottom: 10px;
   }
-
-  .box-image {
-    width: 30%;
-    left: 40px;
-    bottom: 62px;
-    right: auto;
-    top: auto;
-  }
 }
-
-@media (min-width: 851px) and (max-width: 1023px) {
-  .illustration-column {
-    height: 200px;
-  }
-
-  .bg-image {
-    bottom: -10px;
-    width: 40vw;
-    height: auto;
-  }
-
-  .woman-online {
-    bottom: 30px;
-    top: auto;
-    width: 40vw;
-    height: auto;
-  }
-
-  .box-image {
-    width: 14%;
-    left: 270px;
-    bottom: 90px;
-  }
-}
-
-@media (min-width: 851px) and (max-width: 934px) {
-  .box-image {
-    left: 250px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 850px) {
-  .illustration-column {
-    height: 200px;
-  }
-
-  .bg-image {
-    bottom: -10px;
-    width: 55vw;
-    height: auto;
-  }
-
-  .woman-online {
-    bottom: 30px;
-    top: auto;
-    width: 55vw;
-    height: auto;
-  }
-
-  .box-image {
-    width: 20%;
-    left: 160px;
-    bottom: 90px;
-  }
-}
-
-@media (min-width: 661px) and (max-width: 768px) {
-  .illustration-column {
-    height: 190px;
-  }
-
-  .bg-image {
-    bottom: -10px;
-    width: 60vw;
-    height: auto;
-  }
-
-  .woman-online {
-    bottom: 30px;
-    top: auto;
-    width: 60vw;
-    height: auto;
-  }
-
-  .box-image {
-    width: 25%;
-    left: 105px;
-    bottom: 70px;
-  }
-}
-
-@media (min-width: 501px) and (max-width: 660px) {
-  .main-container {
-    margin-bottom: 50px;
-  }
-
-  .illustration-column {
-    height: 180px;
-  }
-
-  .bg-image {
-    bottom: -10px;
-    width: 70vw;
-    height: auto;
-  }
-
-  .woman-online {
-    bottom: 30px;
-    top: auto;
-    width: 70vw;
-    height: auto;
-  }
-
-  .box-image {
-    width: 25%;
-    left: 75px;
-    bottom: 90px;
-  }
-}
-
-@media (min-width: 401px) and (max-width: 500px) {
-  .illustration-column {
-    height: 120px;
-  }
-
-  .bg-image {
-    bottom: -10px;
-    width: 70vw;
-    height: auto;
-  }
-
-  .woman-online {
-    bottom: 30px;
-    top: auto;
-    width: 70vw;
-    height: auto;
-  }
-}
-
+/* 
 @media (max-width: 400px) {
   .illustration-column {
     height: 120px;
   }
 
-  .woman-online,
-  .bg-image {
-    width: 75%;
-    height: auto;
+  .bg-image-mobile {
+    bottom: -10px;
+    height: 120px;
   }
 
-  .bg-image {
-    bottom: 6px;
-  }
-
-  .woman-online {
-    bottom: 36px;
+  .woman-online-mobile {
+    bottom: 30px;
     top: auto;
+    height: 80px;
   }
-}
+} */
